@@ -1,0 +1,24 @@
+{
+  "name": "entregable-1",
+  "version": "1.0.0",
+  "description": "Esto es un proyecto hecho por Pedro Martin Flores",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hyoukaji/entregable-1.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Hyoukaji/entregable-1/issues"
+  },
+  "homepage": "https://github.com/Hyoukaji/entregable-1#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nodemon": "^2.0.15"
+  }
+}
