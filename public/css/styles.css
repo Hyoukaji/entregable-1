@@ -1,3 +1,26 @@
-body{
-    background-color: salmon;
+@import url('normalize.css');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css");
+
+
+.main-header{
+    background-color:#EAC926;
+    font-size: 12px;
+    font-family: 'Roboto';
+}
+
+h3{
+    font-size: 24px;
+}
+
+.dieciocho{
+    font-size: 18px;
+}
+
+.dieciseis{
+    font-size: 16px;
+}
+
+.doce{
+    font-size: 12px;
 }
