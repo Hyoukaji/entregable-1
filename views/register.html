@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mercado Liebre</title>
+    <title>Register</title>
     <link href="/css/styles.css" rel="stylesheet">
 </head>
 <body>
@@ -43,64 +43,50 @@
         </div>
         <img src="/images/img-home-banner.jpg" alt="" width="200" >        
     </header>
+
     <main>
-        <section class = "product-container">
-            <h3>Basados en tu ultima visita</h3>
-            <article class = "product">
-                <img src="/images/img-cafetera-moulinex.jpg" alt="" width="200" >
-                <div class="blanco">
-                    <div class="verde">
-                        <i class="fas fa-truck"></i> 
-                    </div>
-                    <p class="price">$6.770</p>
-                    <p class="discount">40%OFF</p>
-                    <br>
-                    <p class="description">Cafetera Moulinex</p>
-                </div>
-            </article>
-            <article class = "product">
-                <img src="/images/img-macbook-pro-2019.jpg" alt="" width="200" >
-                <div class="blanco">
-                    <div class="verde">
-                        <i class="fas fa-truck"></i> 
-                    </div> 
-                    <p class="price">$230.000</p>
-                    <p class="discount">20%OFF</p>
-                    <br>
-                    <p class="description">Macbook Pro 2019</p>
-                </div>
-            </article>
-            <article class = "product">
-                <img src="/images/img-samsung-galaxy-s10.jpg" alt="" width="200" >
-                <div class="blanco">
-                    <div class="verde">
-                        <i class="fas fa-truck"></i> 
-                    </div>
-                    <p class="price">$70.500</p>
-                    <p class="discount">10%OFF</p>
-                    <br>
-                    <p class="description">Samsung Galaxy S10</p>
-                </div>
-            </article>
-            <article class = "product">
-                <img src="/images/img-tv-samsung-smart.jpg" alt="" width="200" >
-                <div class="blanco">
-                    <div class="verde">
-                        <i class="fas fa-truck"></i> 
-                    </div> 
-                    <p class="price">$23.200</p>
-                    <p class="discount">5%OFF</p>
-                    <br>
-                    <p class="description">Smart Tv Samsung 43"</p>
-                </div>
-            </article>
-        </section>
+        <section >
+            <form action="" class="formulario">
+                <label for="nombre-apellido">nombre-apellido</label>
+                <input type="text" name="nombre-apellido" id="nombre-apellido">
 
+                <label for="nombre-usuario">usuario</label>
+                <input type="text" name="nombre-usuario" id="nombre-usuario">
 
-        <section>
-            <h3>Ofertas del dia</h3>
+                <label for="fecha-nacimiento">fecha de nacimiento</label>
+                <input type="text" name="fecha-nacimiento" id="fecha-nacimiento">
+
+                <label for="domicilio">domicilio</label>
+                <input type="text" name="domicilio" id="domicilio">
+
+                <label for="pregunta">¿Compras? o ¿Vendes?</label>
+                <input type="radio" name="pregunta" id="vendo">
+                <input type="radio" name="pregunta" id="compro">
+
+                <label for="categoria">¿Que categorias te interesan?</label>
+                <input type="checkbox" name="categoria1" value="Electro">
+                <input type="checkbox" name="categoria2" value="Moda">
+                <input type="checkbox" name="categoria3" value="Hogar">
+                <input type="checkbox" name="categoria4" value="Juguetería">
+                <input type="checkbox" name="categoria5" value="Vida Sana">
+
+                <label for="contraseña">contraseña</label>
+                <input type="password" name="contraseña" id="contraseña">
+
+                <label for="confirma-contraseña">confirma contraseña</label>
+                <input type="password" name="confirma-contraseña" id="confirma-contraseña">
+
+                <label for="borrar">borrar</label>
+                <input type="reset" name="borrar" id="borrar">
+
+                <label for="enviar">enviar</label>
+                <input type="submit" name="enviar" id="enviar">
+            </form>
         </section>
+        
+
     </main>
+
     <footer>
         <div class="footer-icon">
             <i class="fas fa-credit-card"></i>
@@ -124,7 +110,6 @@
         <br>
         <br>
         <h3> Copyright © 1999-2020 MercadoLiebre S.R.L.</h3>
-        
     </footer>
 </body>
 </html>
