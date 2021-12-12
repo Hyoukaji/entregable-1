@@ -2,14 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css");
 
-@media (min-width:361px){
-    
-}
-@media (max-width:361px){
-    .description{
-        display: none;
-    }
-}
 @media (min-width:769px){
     .burger-menu{
         display: none;
@@ -17,27 +9,80 @@
     .img-cont img{
         display: none;
     }
+
+    .logo-div img{
+        width: 250px;
+    }
+
+    .img-cont{
+        display: none;
+    }
 }
 
+@media (min-width:1024px){
+
+    main .product {
+        width: 19.3vw;
+    }
+
+    .main-header{
+        height: 200px;
+    }
+
+    main .product :hover .description{
+        display: inline-block;
+    }
+
+    main .product:hover{
+        box-shadow : 0px 0px 10px rgb( 100 , 100 , 100 ), 0px 35px 10px rgb( 100 , 100 , 100 );
+    }
+
+    footer .footer-par:hover{
+        box-shadow : 0px 0px 10px rgb( 100 , 100 , 100 ), 0px 35px 10px rgb( 100 , 100 , 100 );
+    }
+
+    footer :hover .footer-icon{
+        color: #0022AA ;
+    }
+
+    @keyframes rotate {
+        0%{
+            transform: rotate(0deg);
+        }
+        50%{
+            transform: rotate(360deg)
+        }
+        100%{
+            transform: rotate(0geg);
+        }
+    }
+    main .product-container .product .product-price-off:hover .truck{
+        animation-name: rotate;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+    }
+
+}
 
 * {
+    margin: 0%;
+    font-family: "Roboto";
+    padding: 0%;
     box-sizing: border-box;
 }
 
-ul, al {
+ul, li {
     list-style: none;
-    padding: 0;
-    margin: 0;
+    padding: 2px;
+    margin: 2px;
     text-decoration: none;
 }
 
 h3{
+    padding: 2px;
+    margin: 2px;
     align-self: center;
     font-size: 24px;
-}
-
-body{
-    font-family: 'Roboto';
 }
 
 main {
@@ -47,22 +92,6 @@ main {
     flex-direction: column  ;
 }
 
-footer{
-    background-color: #ebebeb;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-}
-
-.footer-par{
-    background-color: white;
-    padding: 5%;
-    width: 40%;
-    margin: 5%;
-    display: flex;
-    flex-direction: column;
-
-}
 
 .burger-menu{
     color: white;
@@ -79,27 +108,19 @@ footer{
 
 .main-header{
     display: flex;
-    justify-content: space-between;
     flex-direction: column;
-    flex-wrap: wrap;
     background-color:#EAC926;
+    padding: 20px 10px 0 10px;
     font-size: 12px;
-    font-family: 'Roboto';
-    height: 30%;
 }
 
-.img-cont{
-    display: flex;
-    height: 20%;
-    align-self: flex-end;
-    max-height: 100px;
-}
+
+
 .img-cont img{
     width: 100%;
 }
 
 .div-nav{
-    text-decoration: none;
     height: 10px;
     margin: 5px;
     display: flex;
@@ -126,11 +147,12 @@ footer{
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
+    
 }
 
 .logo-div img{
     width: 30%;
-    height: 20%;
+    
 }
 
 .product{
@@ -178,13 +200,10 @@ footer{
 }
 
 .description{
+    display: none;
     padding-left: 5px;
     align-self: flex-start;
     font-size: 16px;
-}
-
-.product .description :hover{
-    display: none;
 }
 
 .truck{
@@ -203,11 +222,33 @@ footer{
     padding:1%;
 }
 
+footer{
+    background-color: #ebebeb;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.footer-par{
+    background-color: white;
+    padding: 5%;
+    width: 40%;
+    margin: 5%;
+    display: flex;
+    flex-direction: column;
+
+}
+
 .footer-icon{
     color: #1259c3;
     text-align: center;
     font-size: 4em;
     margin-bottom: 10px;
+}
+
+.copy-r{
+    align-self: center;
+    align-content: flex-end;
 }
 
 .formulario{

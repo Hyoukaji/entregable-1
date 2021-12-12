@@ -12,12 +12,10 @@
         <!-- cabecera de la pagina -->
         <section class="logo-div">
             <img src="/images/logo-mercado-liebre.svg" alt="" width="200" > 
-
-            <form action="/procesar">
-                <input type="text">
-                <button><i class="fas fa-search"></i></button>
+            <form action="">
+                <input name="buscar" type="text" placeholder="Buscar productos">
+                <button type="submit" name="buscar"><i class="fas fa-search"></i></button>    
             </form>
-            
             <p> 
                 <i class="fas fa-hand-holding-usd"></i>
                 Compra en cuotas y sin tarjeta de credito
@@ -36,8 +34,8 @@
             <br>
             <nav>
                 <ul class="ul-2">
-                    <li><a href="">Crea tu cuenta </a><i class="far fa-id-card"></i></li>
-                    <li><a href="">Ingresá </a><i class="fas fa-sign-in-alt"></i></li>
+                    <li><a href="/register">Crea tu cuenta </a><i class="far fa-id-card"></i></li>
+                    <li><a href="/login">Ingresá </a><i class="fas fa-sign-in-alt"></i></li>
                     <li><a href="">Mis compras </a><i class="fas fa-shopping-basket"></i></li> 
                 </ul>
                 
@@ -45,14 +43,15 @@
         </section>
         <section class="burger-menu">
             <i class="fas fa-bars"></i>
-        </section>
-        <section class="img-cont">
-            <img src="/images/img-home-banner.jpg" alt="" width="" >
-        </section>        
+        </section>       
     </header>
     <main>
+        <div class="img-cont">
+        <img src="/images/img-home-banner.jpg" alt="" width="100%" >
+        </div>
+        <h3>Basados en tu ultima visita</h3>
         <section class = "product-container">
-            <h3>Basados en tu ultima visita</h3>
+            
             <article class = "product">
                 <img src="/images/img-cafetera-moulinex.jpg" alt="" width=" " >
                 <div class="product-price-off">
@@ -136,7 +135,9 @@
         <br>
         <br>
         <br>
-        <h3> Copyright © 1999-2020 MercadoLiebre S.R.L.</h3>
+        <div class="copy-r">
+            <h3> Copyright © 1999-2020 MercadoLiebre S.R.L.</h3>
+        </div>
         
     </footer>
 </body>
