@@ -49,10 +49,10 @@
         
             <form action="/" class="formulario">
                 <label for="nombre-apellido">Nombre-Apellido</label>
-                <input type="text" name="nombre-apellido" id="nombre-apellido" required>
+                <input type="text" name="nombre-apellido" minlength="2" id="nombre-apellido" required>
 
                 <label for="nombre-usuario">Usuario</label>
-                <input type="text" name="nombre-usuario" id="nombre-usuario" required>
+                <input type="text" name="nombre-usuario" minlength="2" id="nombre-usuario" required>
 
                 <label for="fecha-nacimiento">Fecha de nacimiento</label>
                 <input type="date" name="fecha-nacimiento" value="2021-12-08" id="fecha-nacimiento">
@@ -61,7 +61,7 @@
                 <input type="file" name="avatar" accept="jpg" multiple id="avatar" required>
 
                 <label for="domicilio">Domicilio</label>
-                <input type="text" name="domicilio" id="domicilio" required>
+                <input type="text" name="domicilio" minlength="8" id="domicilio" required>
 
                 <label for="pregunta">¿Compras? o ¿Vendes?</label>
                 <div class="marca">
@@ -80,10 +80,10 @@
                 </ul>
             
                 <label for="contraseña">Contraseña</label>
-                <input type="password" name="contraseña" id="contraseña" required>
+                <input type="password" name="contraseña" minlength="8" id="contraseña" required>
 
                 <label for="confirma-contraseña">Confirma contraseña</label>
-                <input type="password" name="confirma-contraseña" id="confirma-contraseña" required>
+                <input type="password" name="confirma-contraseña" minlength="8" id="confirma-contraseña" required>
 
                 
                 <div class="azul">

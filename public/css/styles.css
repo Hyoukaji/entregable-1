@@ -197,8 +197,32 @@ main {
 }
 
 .logo-div img{
-    width: 30%;
-    
+    width: 30%;  
+}
+
+.logo-div form{
+    display: flex;
+    align-items: center;
+}
+
+.logo-div form input{
+    width: 100%;
+    border-radius: 15%;
+    height: 22px;
+}
+
+.logo-div form button{
+    position: relative;
+    right: 20px;
+    height: 15px;
+    background-color: transparent;
+    color: (0,0,0,0.5);
+    border-color: transparent;
+}
+
+.logo-div form i{
+    background-color: transparent;
+    color: (0,0,0,0.5);
 }
 
 .product{
@@ -228,7 +252,7 @@ main {
     align-items: center;
     flex-direction: row;
     flex-wrap: wrap;
-    margin: auto;
+    margin: 10px;
     width: 90%;
 }
 
@@ -320,10 +344,10 @@ footer{
     flex-wrap: wrap;
     justify-content: space-around;
     background-color: #ebebeb;
-    width: 30%;
+    width: 40%;
     align-self: center;
     align-items: center;
-    padding: 3%;
+    padding: 1%;
     margin: 3%;
     border-radius: 10%;
     min-width: 300px;  
