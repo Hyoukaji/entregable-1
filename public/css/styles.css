@@ -179,6 +179,7 @@ main {
     background-color:#EAC926;
     padding: 20px 10px 0 10px;
     font-size: 12px;
+    width: 100%;
 }
 
 
@@ -351,6 +352,13 @@ footer{
     flex-direction: column;
     justify-content: space-around;
     flex-wrap: wrap;
+}
+
+
+.azul input,.azul button{
+    background-color:#1259c3 ;
+    width: 100px;
+    height: 40px;
 }
 
 .azul :hover{
